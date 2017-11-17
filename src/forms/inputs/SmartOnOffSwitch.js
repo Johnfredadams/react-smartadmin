@@ -3,7 +3,7 @@ import _ from 'lodash'
 //var React = require('react');
 //var _ = require('lodash');
 
-class OnOffSwitch extends React.component{
+class OnOffSwitch extends React.Component{
     render() {
         let props = this.props;
         let id = props.id || _.uniqueId('on-off-switch');
