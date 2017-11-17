@@ -26,4 +26,4 @@ class OnOffSwitch extends React.component{
     }
 };
 
-module.exports = OnOffSwitch;
+export default OnOffSwitch;
