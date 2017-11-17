@@ -1,17 +1,21 @@
 (function (global, factory) {
     if (typeof define === "function" && define.amd) {
-        define(['module', 'react', 'lodash'], factory);
+        define(['exports', 'react', 'lodash'], factory);
     } else if (typeof exports !== "undefined") {
-        factory(module, require('react'), require('lodash'));
+        factory(exports, require('react'), require('lodash'));
     } else {
         var mod = {
             exports: {}
         };
-        factory(mod, global.react, global.lodash);
+        factory(mod.exports, global.react, global.lodash);
         global.SmartOnOffSwitch = mod.exports;
     }
-})(this, function (module, _react, _lodash) {
+})(this, function (exports, _react, _lodash) {
     'use strict';
+
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
 
     var _react2 = _interopRequireDefault(_react);
 
@@ -71,8 +75,8 @@
         if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
     }
 
-    var OnOffSwitch = function (_React$component) {
-        _inherits(OnOffSwitch, _React$component);
+    var OnOffSwitch = function (_React$Component) {
+        _inherits(OnOffSwitch, _React$Component);
 
         function OnOffSwitch() {
             _classCallCheck(this, OnOffSwitch);
@@ -111,9 +115,9 @@
         }]);
 
         return OnOffSwitch;
-    }(_react2.default.component);
+    }(_react2.default.Component);
 
     ;
 
-    module.exports = OnOffSwitch;
+    exports.default = OnOffSwitch;
 });
