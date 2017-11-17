@@ -25,7 +25,7 @@
     };
   }
 
-  var components = {
+  var Components = {
     forms: {
       inputs: _index2.default
     }

@@ -4,7 +4,7 @@
 
 import inputs from './forms/inputs/index.js';
 
-var components = {
+var Components = {
   forms: {
     inputs: inputs
   }
