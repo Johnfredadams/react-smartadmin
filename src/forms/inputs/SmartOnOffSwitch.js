@@ -16,7 +16,7 @@ class OnOffSwitch extends React.Component{
 						<section>
 							<label className="toggle">
                                 {title}
-                                <input type="checkbox" name="checkbox-toggle-{id}" id={id} checked={props.checked} readOnly />
+                                <input type="checkbox" name={"checkbox-toggle-" + id} id={id} checked={props.checked} readOnly />
                                 <i data-swchon-text={onText} data-swchoff-text={offText} onClick={props.onToggle}></i>
                             </label>
 						</section>
